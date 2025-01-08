@@ -12,7 +12,8 @@ app.set('view engine', 'pug');
 app.set('views', './views/pug');
 
 app.use(session({
-  secret: process.env.SESSION_SECRET,
+  //secret: process.env.SESSION_SECRET,
+  secret: 'jola',
   resave: true,
   saveUninitialized: true,
   cookie: { secure: false }
